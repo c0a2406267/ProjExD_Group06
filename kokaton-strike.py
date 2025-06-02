@@ -329,6 +329,7 @@ while running:
         if hame_timer <= 0:
             hamehameha_active = False
     
+    
     for b in enemy.p[:]:
         if distance(player_pos, b['pos']) <= player_radius + 5:
             player_hp.take_damage(1)
