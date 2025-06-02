@@ -170,7 +170,7 @@ def draw():
     enemy.draw()
     player_hp.draw(screen, player_pos, player_radius)
 
-    score_surf = pygame.font.SysFont(None, 36).render(f"Score: {score}", True, BLACK)
+    score_surf = pygame.font.SysFont(None, 36).render(f"Score: {score}", True, WHITE)
     screen.blit(score_surf, (20, 20))
 
     # 爆発描画（DOKKA-Nより後）
@@ -325,7 +325,7 @@ while running:
                 score -= 5 # スコアを消費してスキル発動
 
     if hamehameha_active:
-        hame_timer -= 1
+        hame_timer -= 1 
         if hame_timer <= 0:
             hamehameha_active = False
     
